@@ -4,10 +4,10 @@
 
 <script>
 export default {
-    head () {
-        return {
-            title: 'Frontmen',
-        }
+  head() {
+    return {
+      title: 'Frontmen'
     }
-};
+  }
+}
 </script>

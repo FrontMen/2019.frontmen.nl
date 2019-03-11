@@ -1,46 +1,61 @@
 module.exports = {
-  modules: ["nuxtdown"],
+  mode: 'universal',
+
+  modules: ['nuxtdown'],
+
   env: {
     BASE_URL: 'https://frontmen-2019.netlify.com' || 'http://localhost:3000'
   },
+
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     htmlAttrs: {
-      lang: 'en',
+      lang: 'en'
     },
-    title: "My Website",
+    title: 'My Website',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: "description",
-        name: "description",
-        content: "Welcome to my website."
+        hid: 'description',
+        name: 'description',
+        content: 'Welcome to my website.'
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'
+      }
+    ]
   },
+
+  css: ['@/assets/css/main.css'],
+
   /*
-  ** Customize the progress bar color
-  */
-  loading: { color: "#FFBB43" },
+   ** Customize the progress bar color
+   */
+  loading: { color: '#FFBB43' },
+
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** Run ESLint on save
-    */
+     ** Run ESLint on save
+     */
     extend(config, { isDev }) {
       if (isDev && process.client) {
         config.module.rules.push({
-          enforce: "pre",
+          enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: "eslint-loader",
+          loader: 'eslint-loader',
           exclude: /(node_modules)/
-        });
+        })
       }
     }
   }
