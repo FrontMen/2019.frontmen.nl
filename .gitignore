@@ -1,0 +1,15 @@
+# GENERATED FILES
+dist/
+
+# NPM
+node_modules
+
+# IDE
+.idea/
+.vscode/
+
+# OS FILES
+.DS_Store
+
+#CI
+.gitignore.bak
