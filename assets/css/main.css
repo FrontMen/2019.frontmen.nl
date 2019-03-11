@@ -1,3 +1,14 @@
+:root {
+  --darkblue: #1f1e32;
+  --lightblue: #00cccc;
+  --orange: #ff5900;
+}
+
+@font-face {
+  font-family: Stratum;
+  src: url(/assets/fonts/Stratum1-Bold.woff) format('woff'),
+}
+
 body {
   background: #fff;
 }
