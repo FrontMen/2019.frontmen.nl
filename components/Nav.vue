@@ -1,5 +1,6 @@
 <template>
   <nav>
+    Open: {{ navOpen }}
     <ul>
       <li>
         <nuxt-link :to="'/'">
@@ -22,7 +23,13 @@
 
 <script>
 export default {
-  name: 'Nav'
+  name: 'Nav',
+  props: {
+    navOpen: {
+      type: Boolean,
+      required: true
+    }
+  }
 }
 </script>
 
