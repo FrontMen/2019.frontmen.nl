@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <main role="main">
     <p>Nav open: {{ navOpen }}</p>
     <slot />
-  </div>
+  </main>
 </template>
 
 <script>

@@ -1,5 +1,7 @@
 <template>
-  <h2>Logo</h2>
+  <nuxt-link :to="'/'">
+    <img src="/images/fm-monogram-logo.svg" alt="Frontmen">
+  </nuxt-link>
 </template>
 
 <script>
