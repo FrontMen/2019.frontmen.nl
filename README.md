@@ -1,6 +1,6 @@
-# frontmen-website
+# frontmen.nl
 
-> Frontmen website
+[frontmen.nl](https://www.frontmen.nl)
 
 ## Build Setup
 
@@ -25,6 +25,3 @@ See [starter template documentation in the README on GitHub](https://github.com/
 ## Edit content
 
 Access `yourwebsite.com/admin`, e.g. `localhost:3000/admin`.
-# frontmen.nl-2019
-# frontmen.nl-2019
-# frontmen.nl-2019
