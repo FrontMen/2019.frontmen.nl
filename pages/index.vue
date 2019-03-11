@@ -1,9 +1,13 @@
 <template>
-  <div class="container">
-    <h2>Welcome</h2>
-  </div>
+  <p>Homepage</p>
 </template>
 
 <script>
-export default {};
+export default {
+    head () {
+        return {
+            title: 'Frontmen',
+        }
+    }
+};
 </script>
