@@ -45,7 +45,7 @@ h1 {
   flex: 1;
   text-transform: uppercase;
   font-family: Stratum;
-  font-size: var(--lightgrey);
+  color: var(--lightgrey);
 }
 
 .logo {
