@@ -35,6 +35,13 @@ export default {
 </script>
 
 <style scoped>
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: 0
+}
+
 header {
   background-color: var(--darkblue);
   display: flex;
