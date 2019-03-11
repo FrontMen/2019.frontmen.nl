@@ -6,7 +6,7 @@
 
     <h1>{{ title }}</h1>
 
-    <Logo />
+    <Logo class="logo"/>
   </header>
 </template>
 
@@ -35,5 +35,20 @@ export default {
 </script>
 
 <style scoped>
+header {
+  background-color: var(--darkblue);
+  display: flex;
+  align-items: center;
+}
 
+h1 {
+  flex: 1;
+  text-transform: uppercase;
+  font-family: Stratum;
+  font-size: var(--lightgrey);
+}
+
+.logo {
+  flex: 0 1;
+}
 </style>
