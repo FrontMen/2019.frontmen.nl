@@ -1,7 +1,7 @@
 <template>
   <footer role="contentinfo" style="color: #fff;">
     <a href="/" class="flex-row">
-      <img src="@/static/images/fm-monogram-logo.svg" height="50rem" alt="Frontmen">
+      <img src="/images/fm-monogram-logo.svg" height="50rem" alt="Frontmen">
     </a>
     <div class="flex-row">
       <nav>
