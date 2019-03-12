@@ -4,6 +4,9 @@
     <div>badges come here</div>
     <footer>
       <span>
+        <img src="/images/frontdesk-avatar.png"/>
+        </span>
+      <span>
         <strong>WANT TO KNOW MORE?</strong>
         <span>Call or mail us!</span>
         <a href="tel:0302658108">030 - 26 58 108</a>
@@ -29,11 +32,9 @@ export default {
   props: {
     tags: {
       type: Array,
-      required: false
     },
     tools: {
       type: Array,
-      required: false
     }
   }
 }
