@@ -2,7 +2,10 @@
   <section>
     <h4>Frontmen on Medium</h4>
     <h3>Art of debugging with Chrome DevTools</h3>
-    <img src="https://cdn-images-1.medium.com/max/2000/1*K2Utn78MaVzlUeIagOEZRg.png">
+    <a href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4">
+      <img src="https://cdn-images-1.medium.com/max/2000/1*K2Utn78MaVzlUeIagOEZRg.png">
+    </a>
+
     <p>
       Chrome DevTools come with an array of features that help developers debug their apps effectively,
       and therefore find and fix the bugs faster. There are a lot of power tools in devtools which are not quite well-known amongst the developers.
@@ -22,7 +25,7 @@ export default {
 <style scoped>
 section {
   background-color: var(--lightblue);
-  padding: 1rem
+  padding: 1rem;
 }
 
 img {
@@ -39,7 +42,6 @@ button {
   color: #fff;
   text-transform: uppercase;
   border: 0;
-  outline: none
+  outline: none;
 }
-
 </style>
