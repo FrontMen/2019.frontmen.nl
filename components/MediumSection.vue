@@ -10,9 +10,14 @@
       Chrome DevTools come with an array of features that help developers debug their apps effectively,
       and therefore find and fix the bugs faster. There are a lot of power tools in devtools which are not quite well-known amongst the developers.
     </p>
-    <a href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4">
+    <div :style="{ textAlign: 'center', width: '100%'}">
+    <a
+      href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4"
+    >
       <button>Read the full article</button>
     </a>
+    </div>
+    <div class="triangle-divider"/>
   </section>
 </template>
 
@@ -25,7 +30,6 @@ export default {
 <style scoped>
 section {
   background-color: var(--lightblue);
-  padding: 1rem;
 }
 
 img {
@@ -43,5 +47,12 @@ button {
   text-transform: uppercase;
   border: 0;
   outline: none;
+}
+
+.triangle-divider {
+  background-color: var(--darkblue);
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 100px solid var(--lightblue);
 }
 </style>

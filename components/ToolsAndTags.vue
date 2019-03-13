@@ -1,11 +1,16 @@
 <template>
   <section>
     <h2>Our Tools</h2>
-    <div>badges come here</div>
+    <content class="badge-bar">
+
+      <Badge :size="10" color="#ff5900" icon="/images/badges-tech/react.svg" label="react"></Badge>
+      <Badge :size="10" color="#ff5900" icon="/images/badges-tech/redux.svg" label="redux"></Badge>
+      <Badge :size="10" color="#ff5900" icon="/images/badges-tech/css.svg" label="css"></Badge>
+    </content>
     <footer>
       <span>
-        <img src="/images/frontdesk-avatar.png"/>
-        </span>
+        <img src="/images/frontdesk-avatar.png">
+      </span>
       <span>
         <strong>WANT TO KNOW MORE?</strong>
         <span>Call or mail us!</span>
@@ -24,17 +29,20 @@
 
 <script>
 import Tag from './Tag'
+import Badge from './Badge'
+
 export default {
   name: 'BlockQuote',
   components: {
-    Tag
+    Tag,
+    Badge
   },
   props: {
     tags: {
-      type: Array,
+      type: Array
     },
     tools: {
-      type: Array,
+      type: Array
     }
   }
 }
@@ -51,5 +59,12 @@ strong {
 
 footer {
   background-color: var(--lightgrey);
+}
+
+.badge-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: -100px;
+  margin-left: 20%
 }
 </style>

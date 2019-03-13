@@ -10,10 +10,10 @@
     <content
       class="content"
       :style="{
-       backgroundColor: color,
-       height: .75 * size + 'em',
-       width: size + 'em',
-       }"
+        backgroundColor: color,
+        height: .75 * size + 'em',
+        width: size + 'em',
+      }"
     >
       <span :style="{ padding: `0 ${0.2 * size}em` }">
         <img width="100%" :src="icon">
@@ -34,10 +34,12 @@
 
 <script>
 
+//todo: If you'd rather have a couple of fixed sizes use these
 const sizes = {
-  s: '',
-  m: '',
-  l: ''
+  s: 5,
+  m: 10,
+  l: 15,
+  xl: 20
 }
 
 export default {
@@ -61,7 +63,7 @@ export default {
       type: String
     },
     size: {
-      //height of content (without arrows) in em. 
+      //height of content (without arrows) in em.
       default: 10,
       type: Number
     }

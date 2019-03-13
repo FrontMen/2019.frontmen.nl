@@ -1,8 +1,8 @@
 <template>
   <footer role="contentinfo" style="color: #fff;">
-    <a href="/" class="flex-row">
+    <header class="flex-row">
       <img src="/images/fm-monogram-logo.svg" height="50rem" alt="Frontmen">
-    </a>
+    </header>
     <div class="flex-row">
       <nav>
         <h3>Our website</h3>
@@ -88,7 +88,7 @@
         </div>
       </div>
     </div>
-
+    <div class="triangle-divider" />
     <div class="copyright-footer">
       © Frontmen |
       <a href="/privacy">View privacy note</a>
@@ -132,6 +132,18 @@ a {
 }
 
 .copyright-footer {
-  background-color: var(--orange);
+  width: 100%;
+  text-align: center;
+  height: 2rem
+}
+
+.triangle-divider {
+  width: 0;
+  height: 0;
+  background-color: var(--darkblue);
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-bottom: 100px solid var(--orange);
+  margin-bottom: -2rem
 }
 </style>
