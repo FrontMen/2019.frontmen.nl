@@ -1,8 +1,8 @@
 <template>
   <blockquote>
-      <p>
+    <p>
       Any application that can be written in JavaScript, will eventually be written in JavaScript
-      </p>
+    </p>
     <footer>
       <cite>
         <strong>Jeff Atwood</strong>
@@ -26,14 +26,14 @@ blockquote {
 p {
   font-size: 2.25rem;
   line-height: 1.33333;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
 footer {
   position: relative;
   border-top: solid 2px var(--orange);
   padding-top: 48px;
-  margin-bottom: 2em
+  margin-bottom: 2em;
 }
 
 footer:before {

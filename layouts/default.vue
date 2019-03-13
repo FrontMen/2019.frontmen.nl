@@ -8,7 +8,7 @@
     <BlockQuote />
     <ToolsAndTags />
     <MediumSection />
-    
+
     <Footer />
   </div>
 </template>
@@ -20,7 +20,7 @@ import Footer from '../components/Footer'
 import Main from '../components/Main'
 import MediumSection from '../components/MediumSection'
 import BlockQuote from '../components/BlockQuote'
-import ToolsAndTags from "../components/ToolsAndTags";
+import ToolsAndTags from '../components/ToolsAndTags'
 
 export default {
   components: {
