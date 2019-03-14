@@ -11,11 +11,9 @@
       and therefore find and fix the bugs faster. There are a lot of power tools in devtools which are not quite well-known amongst the developers.
     </p>
     <div :style="{ textAlign: 'center', width: '100%'}">
-    <a
-      href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4"
-    >
-      <button>Read the full article</button>
-    </a>
+      <a href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4">
+        <button>Read the full article</button>
+      </a>
     </div>
     <div class="triangle-divider"/>
   </section>
@@ -49,10 +47,23 @@ button {
   outline: none;
 }
 
+/* Triangle-divider is fixed from 961px and above*/
+@media (max-width: 960px) {
+  .triangle-divider {
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+  }
+}
+
+@media (min-width: 961px) {
+  .triangle-divider {
+    border-left: 480px solid transparent;
+    border-right: 480px solid transparent;
+  }
+}
+
 .triangle-divider {
   background-color: var(--darkblue);
-  border-left: 50vw solid transparent;
-  border-right: 50vw solid transparent;
   border-top: 100px solid var(--lightblue);
 }
 </style>

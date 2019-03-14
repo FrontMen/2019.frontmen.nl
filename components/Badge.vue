@@ -1,5 +1,5 @@
 <template>
-  <content class="content">
+  <span class="badge">
     <header
       :style="{
         borderBottom: triangleY,
@@ -7,21 +7,23 @@
         borderLeft: triangleX
       }"
     />
-    <content
+    <span
       class="content"
       :style="{
         backgroundColor: color,
-        height: .75 * size + 'em',
-        width: size + 'em',
+        height: .75 * sizeNumber + 'rem',
+        width: sizeNumber + 'rem',
       }"
     >
-      <span :style="{ padding: `0 ${0.2 * size}em` }">
-        <img width="100%" :src="icon">
+      <span :style="{ padding: `0 ${0.2 * sizeNumber}rem` }">
+        <img width="100%" :src="`/images/badges-${type}/${name}.svg`">
       </span>
-      <span class="label" :style="{ fontSize: .1 * size + 'em',}">
-        {{ label }}
-      </span>
-    </content>
+      <span
+        v-show="showLabel"
+        class="label"
+        :style="{ fontSize: .1 * sizeNumber + 'rem',}"
+      >{{ name }}</span>
+    </span>
     <footer
       :style="{
         borderTop: triangleY,
@@ -29,14 +31,13 @@
         borderLeft: triangleX
       }"
     />
-  </content>
+  </span>
 </template>
 
 <script>
-
 //todo: If you'd rather have a couple of fixed sizes use these
 const sizes = {
-  s: 5,
+  s: 4,
   m: 10,
   l: 15,
   xl: 20
@@ -44,52 +45,70 @@ const sizes = {
 
 export default {
   name: 'Badge',
+  mounted() {
+    console.log('sizeNumber', this.sizeNumber) // I'm text inside the component.
+  },
   computed: {
+    sizeNumber() {
+      return sizes[this.size]
+    },
     triangleY() {
-      return 0.3 * this.size + 'em solid ' + this.color
+      return 0.3 * this.sizeNumber + 'rem solid ' + this.color
     },
     triangleX() {
-      return 0.5 * this.size + 'em solid transparent'
+      return 0.5 * this.sizeNumber + 'rem solid transparent'
     }
   },
   props: {
     color: {
       default: '#1f1e32' //darkblue
     },
-    icon: {
+    type: {
+      required: true,
+      validator: value => {
+        // The value must match one of these strings
+        return ['project', 'social', 'tech'].indexOf(value) !== -1
+      }
+    },
+    name: {
+      type: String,
       required: true
     },
-    label: {
-      type: String
+    showLabel: {
+      default: true
     },
     size: {
-      //height of content (without arrows) in em.
-      default: 10,
-      type: Number
+      default: 'm',
+      validator: value => {
+        return ['s', 'm', 'l', 'xl'].indexOf(value) !== -1
+      }
     }
   }
 }
 </script>
 
 <style scoped>
+
+
+.badge {
+  flex-direction: column;
+  display: inline-flex;
+  z-index: 2;
+}
+
 .content {
   display: inline-flex;
   flex-direction: column;
-}
 
-.label {
-  text-transform: uppercase;
-}
-
-.content {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   list-style: none;
   color: white;
   overflow: visible;
-  z-index: 9;
 }
 
+.label {
+  text-transform: uppercase;
+}
 </style>

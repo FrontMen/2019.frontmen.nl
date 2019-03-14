@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <TopBar title="foo" @openNav="toggleMenu" />
-    <Nav :nav-open="menuOpen" @closeNav="toggleMenu" />
-    <Main :nav-open="menuOpen" @closeNav="toggleMenu">
-      <nuxt />
+  <div class="container">
+    <TopBar :nav-open="menuOpen" @openNav="toggleMenu"/>
+    <Nav :nav-open="menuOpen" @toggleMenu="toggleMenu"/>
+    <Main :nav-open="menuOpen" @toggleMenu="toggleMenu">
+      <nuxt/>
+      <BlockQuote/>
+      <ToolsAndTags/>
+      <MediumSection/>
     </Main>
-    <BlockQuote />
-    <ToolsAndTags />
-    <MediumSection />
 
-    <Footer />
+    <Footer :nav-open="menuOpen"/>
   </div>
 </template>
 
@@ -44,3 +44,10 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.container {
+    background-color: #eee;
+}
+</style>

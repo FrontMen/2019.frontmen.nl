@@ -1,12 +1,18 @@
 <template>
-  <header role="banner">
-    <button @click="openNav">
-      <Icon title="Menu" name="menu-hamburger" />
+  <header
+    class="top-bar"
+    role="banner"
+    :style="{
+    transform: `translate(${navOpen ? 300 : 0 }px)`
+    }"
+  >
+    <button class="menu-button" @click="openNav">
+      <Icon title="Menu" name="menu-hamburger"/>
     </button>
 
-    <h1>{{ title }}</h1>
+    <h1>{{ currentRoute}}</h1>
 
-    <Logo class="logo"/>
+    <img src="/images/fm-monogram-logo.svg" class="logo" alt="Frontmen">
   </header>
 </template>
 
@@ -21,9 +27,15 @@ export default {
     Logo
   },
   props: {
-    title: {
-      type: String,
+    navOpen: {
+      type: Boolean,
       required: true
+    }
+  },
+  computed: {
+    currentRoute() {
+      console.log(this.$route)
+      return this.$route.path.replace(/-/g, ' ').substring(1) //remove '/' and '-' from route.path (route.name is not accurate)
     }
   },
   methods: {
@@ -35,17 +47,24 @@ export default {
 </script>
 
 <style scoped>
-
-button {
-    background-color: transparent;
-    outline: none;
-    border: 0
+.menu-button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  margin-right: 1rem;
 }
 
-header {
+.top-bar {
   background-color: var(--darkblue);
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 4rem;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 h1 {
@@ -56,6 +75,7 @@ h1 {
 }
 
 .logo {
-  flex: 0 1;
+  width: 2.5rem;
+  margin-right: 0.5rem;
 }
 </style>
