@@ -37,7 +37,8 @@
 <script>
 //todo: If you'd rather have a couple of fixed sizes use these
 const sizes = {
-  s: 4,
+  xs: 3,
+  s: 5,
   m: 10,
   l: 15,
   xl: 20

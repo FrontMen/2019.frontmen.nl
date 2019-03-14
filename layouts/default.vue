@@ -16,7 +16,7 @@
 <script>
 import TopBar from '../components/TopBar'
 import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+import Footer from '../components/footer/Footer'
 import Main from '../components/Main'
 import MediumSection from '../components/MediumSection'
 import BlockQuote from '../components/BlockQuote'

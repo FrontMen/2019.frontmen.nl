@@ -28,14 +28,13 @@
 import Tag from './Tag'
 import BadgeBar from './BadgeBar'
 export default {
-  name: 'BlockQuote',
+  name: 'ToolsAndTags',
   components: {
     Tag,
     BadgeBar
   },
   props: {
     tags: {
-      default: ['scrum', 'bla', 'turk'],
       type: Array
     },
     tools: {

@@ -5,52 +5,48 @@
     :style="{ transform: `translateX(${navOpen ? 300 : 0}px)`}"
   >
     <header class="flex-row">
-      <img src="/images/fm-monogram-logo.svg" height="50rem" alt="Frontmen" >
+      <img src="/images/fm-monogram-logo.svg" height="50rem" alt="Frontmen">
     </header>
     <div class="flex-row">
-      <nav>
-        <h3>Our website</h3>
-        <ul class="no-bullets">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/frontend-first">Frontend first</a>
-          </li>
-          <li>
-            <a href="/how-we-work">How we work</a>
-          </li>
-          <li>Work</li>
-          <li>
-            <a href="/work/quby">Quby</a>
-          </li>
-          <li>
-            <a href="/work/tele2">Tele2</a>
-          </li>
-          <!-- <li>
+      <div class="left half">
+        <nav>
+          <h3>Our website</h3>
+          <ul class="no-bullets">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/frontend-first">Frontend first</a>
+            </li>
+            <li>
+              <a href="/how-we-work">How we work</a>
+            </li>
+            <li>Work</li>
+            <li>
+              <a href="/work/quby">Quby</a>
+            </li>
+            <li>
+              <a href="/work/tele2">Tele2</a>
+            </li>
+            <!-- <li>
                     <a href="//">KLM</a>
-          </li>-->
-          <li>
-            <a href="/about">About us</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <div>
-          <h3>Frontmen</h3>
-          <div>
-            <a href="tel:+31302658108">+31 (0)30 - 26 58 108</a>
-            <br>
-            <a href="mailto:info@frontmen.nl">info@frontmen.nl</a>
-          </div>
-        </div>
+            </li>-->
+            <li>
+              <a href="/about">About us</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
 
-    <div class="triangle-divider" />
+      <aside class="right half">
+        <Contact/>
+        <SocialBadges/>
+      </aside>
+    </div>
+    <div class="triangle-divider"/>
     <div class="copyright-footer">
       © Frontmen |
       <a href="/privacy">View privacy note</a>
@@ -59,12 +55,14 @@
 </template>
 
 <script>
-import Badge from './Badge'
+import Contact from './Contact'
+import SocialBadges from './SocialBadges'
 
 export default {
   name: 'Footer',
   components: {
-    Badge
+    Contact,
+    SocialBadges
   },
   props: {
     navOpen: {
@@ -76,6 +74,24 @@ export default {
 </script>
 
 <style scoped>
+.flex-row {
+  display: flex;
+}
+
+.left {
+  padding-left: 5rem;
+}
+
+.right {
+  margin-left: -5rem;
+}
+
+.half {
+  width: 50%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
 footer {
   background-color: var(--darkblue);
   max-width: 960px;
