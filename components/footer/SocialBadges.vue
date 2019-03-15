@@ -63,6 +63,7 @@ export default {
 
 .badge-info {
   padding-left: 1rem;
+  width: 6.5rem; /* Roughly same width as longest text, for wrapping purposes */
 }
 
 .fat-link {
@@ -74,7 +75,7 @@ export default {
 .social-item {
   display: inline-flex;
   align-items: center;
-  width: 50%;
+  padding-right: 3rem;
   margin-bottom: 2rem;
 }
 </style>
