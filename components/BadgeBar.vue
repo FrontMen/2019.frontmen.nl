@@ -51,7 +51,7 @@ export default {
 <style scoped>
 .badge-bar {
   display: flex;
-  margin-bottom: -8rem;
+  margin: 0 8rem -8rem 8rem;
 }
 </style>
 

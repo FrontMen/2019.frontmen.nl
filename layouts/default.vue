@@ -5,7 +5,7 @@
     <Main :nav-open="menuOpen" @toggleMenu="toggleMenu">
       <nuxt/>
       <BlockQuote/>
-      <ToolsAndTags/>
+      <InfoSection/>
       <MediumSection/>
     </Main>
 
@@ -20,7 +20,7 @@ import Footer from '../components/footer/Footer'
 import Main from '../components/Main'
 import MediumSection from '../components/MediumSection'
 import BlockQuote from '../components/BlockQuote'
-import ToolsAndTags from '../components/ToolsAndTags'
+import InfoSection from '../components/InfoSection'
 
 export default {
   components: {
@@ -30,7 +30,7 @@ export default {
     Footer,
     Nav,
     TopBar,
-    ToolsAndTags
+    InfoSection
   },
   data() {
     return {

@@ -68,4 +68,12 @@ export default {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:active {
+  color: var(--lightblue);
+}
 </style>
