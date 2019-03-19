@@ -10,7 +10,7 @@
       <Icon title="Menu" name="menu-hamburger"/>
     </button>
 
-    <h1>{{ currentRoute}}</h1>
+    <h1 class="page-title">{{ currentRoute}}</h1>
 
     <img src="/images/fm-monogram-logo.svg" class="logo" alt="Frontmen">
   </header>
@@ -67,11 +67,15 @@ export default {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-h1 {
+.page-title {
   flex: 1;
   text-transform: uppercase;
   font-family: Stratum;
   color: var(--lightgrey);
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .logo {

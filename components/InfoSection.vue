@@ -62,8 +62,16 @@ export default {
   text-transform: uppercase;
 }
 
-.heading {
-  padding: 0 2rem;
+@media (max-width: 960px) {
+  .heading {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 961px) {
+  .heading {
+    padding: 0 8rem;
+  }
 }
 
 .image {

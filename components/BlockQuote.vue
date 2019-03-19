@@ -1,9 +1,9 @@
 <template>
-  <blockquote>
-    <p>
-      Any application that can be written in JavaScript, will eventually be written in JavaScript
-    </p>
-    <footer>
+  <blockquote class="blockquote">
+    <p
+      class="quote"
+    >Any application that can be written in JavaScript, will eventually be written in JavaScript</p>
+    <footer class="footer">
       <cite>
         <strong>Jeff Atwood</strong>
         <br>founder Stack overflow
@@ -19,24 +19,24 @@ export default {
 </script>
 
 <style scoped>
-blockquote {
+.blockquote {
   color: var(--orange);
 }
 
-p {
+.quote {
   font-size: 2.25rem;
   line-height: 1.33333;
   margin-bottom: 1rem;
 }
 
-footer {
+.footer {
   position: relative;
   border-top: solid 2px var(--orange);
   padding-top: 48px;
   margin-bottom: 2em;
 }
 
-footer:before {
+.footer:before {
   border-color: var(--orange) transparent transparent transparent;
   content: '';
   position: absolute;
@@ -46,7 +46,7 @@ footer:before {
   border-width: 48px 48px 0 0;
 }
 
-footer:after {
+.footer:after {
   border-color: #fff transparent transparent transparent;
   top: -4px;
   left: calc(25% + 2px);

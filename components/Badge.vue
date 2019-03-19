@@ -89,12 +89,11 @@ export default {
 </script>
 
 <style scoped>
-
-
 .badge {
   flex-direction: column;
   display: inline-flex;
   z-index: 2;
+  margin-right: 1rem;
 }
 
 .content {
