@@ -1,8 +1,5 @@
 module.exports = {
   mode: 'universal',
-
-  modules: ['nuxtdown'],
-
   env: {
     BASE_URL: 'https://frontmen-2019.netlify.com' || 'http://localhost:3000'
   },
