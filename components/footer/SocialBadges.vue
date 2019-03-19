@@ -1,7 +1,9 @@
 <template>
   <div class="social-wrapper">
     <div class="social-item">
-      <Badge size="xs" color="#00cccc" type="social" name="medium" :showLabel="false"/>
+      <a href="https://www.medium.com/frontmen" target="_blank" rel="noopener">
+        <Badge size="xs" color="#00cccc" type="social" name="medium" :showLabel="false"/>
+      </a>
       <div class="badge-info">
         <div>We write at</div>
         <a href="https://www.medium.com/frontmen" class="fat-link" target="_blank" rel="noopener">
@@ -10,16 +12,30 @@
       </div>
     </div>
     <div class="social-item">
-      <Badge size="xs" color="#00cccc" type="social" name="meetup" :showLabel="false"/>
+      <a href="https://www.meetup.com/FrontMania/" target="_blank" rel="noopener">
+        <Badge size="xs" color="#00cccc" type="social" name="meetup" :showLabel="false"/>
+      </a>
+
       <div class="badge-info">
         <div>We meet at</div>
-        <a href="https://www.meetup.com/FrontMania/" class="fat-link" target="_blank" rel="noopener">
+        <a
+          href="https://www.meetup.com/FrontMania/"
+          class="fat-link"
+          target="_blank"
+          rel="noopener"
+        >
           <strong>MeetUp</strong>
         </a>
       </div>
     </div>
     <div class="social-item">
-      <Badge size="xs" color="#00cccc" type="social" name="linkedin" :showLabel="false"/>
+      <a
+        href="https://www.linkedin.com/company/frontmen-frontend-experts/"
+        target="_blank"
+        rel="noopener"
+      >
+        <Badge size="xs" color="#00cccc" type="social" name="linkedin" :showLabel="false"/>
+      </a>
       <div class="badge-info">
         <div>We work at</div>
         <a
@@ -33,7 +49,9 @@
       </div>
     </div>
     <div class="social-item">
-      <Badge size="xs" color="#00cccc" type="social" name="twitter" :showLabel="false"/>
+      <a href="https://twitter.com/frontmenhq" target="_blank" rel="noopener">
+        <Badge size="xs" color="#00cccc" type="social" name="twitter" :showLabel="false"/>
+      </a>
       <div class="badge-info">
         <div>We converse at</div>
         <a href="https://twitter.com/frontmenhq" class="fat-link" target="_blank" rel="noopener">

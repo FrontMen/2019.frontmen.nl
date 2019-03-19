@@ -12,11 +12,7 @@
     url(../fonts/Stratum1-Bold.otf) format('otf');
 }
 
-body {
+html, body {
   background: #fff;
   height: 100%;
-}
-
-html, body {
-  width: 100%;
 }

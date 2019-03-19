@@ -3,31 +3,31 @@
     <h3 class="heading">Our website</h3>
     <ul class="no-bullets no-spacing">
       <li>
-        <a class="link" href="/">Home</a>
+        <nuxt-link class="link" :to="'/'">Home</nuxt-link>
       </li>
       <li>
-        <a class="link" href="/frontend-first">Frontend first</a>
+        <nuxt-link class="link" :to="'/frontend-first'">Frontend first</nuxt-link>
       </li>
       <li>
-        <a class="link" href="/how-we-work">How we work</a>
+        <nuxt-link class="link" :to="'/how-we-work'">How we work</nuxt-link>
       </li>
       <li class="submenu-heading">Work</li>
       <ul class="no-bullets">
         <li>
-          <a class="link" href="/work/quby">Quby</a>
+          <nuxt-link class="link" :to="'/work/quby'">Quby</nuxt-link>
         </li>
         <li>
-          <a class="link" href="/work/tele2">Tele2</a>
+          <nuxt-link class="link" :to="'/work/tele2'">Tele2</nuxt-link>
         </li>
       </ul>
       <!-- <li>
-                    <a class="link" href="//">KLM</a>
+                    <nuxt-link class="link" :to="//">KLM</nuxt-link>
       </li>-->
       <li>
-        <a class="link" href="/about">About us</a>
+        <nuxt-link class="link" :to="'/about'">About us</nuxt-link>
       </li>
       <li>
-        <a class="link" href="/contact">Contact</a>
+        <nuxt-link class="link" :to="'/contact'">Contact</nuxt-link>
       </li>
     </ul>
   </nav>

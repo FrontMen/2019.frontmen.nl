@@ -18,6 +18,7 @@
           <div class="button-wrapper">
             <a
               href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4"
+              target="_blank"
             >
               <button class="button">Read the full article</button>
             </a>
@@ -75,7 +76,7 @@ export default {
   text-transform: uppercase;
   border: 0;
   outline: none;
-  cursor: pointer
+  cursor: pointer;
 }
 
 /* Triangle-divider is fixed from 961px and above*/

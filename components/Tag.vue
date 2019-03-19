@@ -22,7 +22,6 @@ div {
   padding: 0 6px;
   margin: 0 24px 12px 24px;
   color: #fff;
-  text-transform: uppercase
 }
 
 div:before {

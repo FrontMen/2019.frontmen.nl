@@ -34,9 +34,8 @@
 
     <h2>The result</h2>
     <p>The app is used to great satisfaction by 300.000+ households in three countries. Eneco expects the number of users per country, and the number of participating countries to rise significantly in the future.</p>
-    <BadgeBar :badges="['react', 'redux', 'jest']"/>
-    <InfoSection/>
-
+    <BadgeBar :badges="['react', 'redux', 'jest']" />
+    <InfoSection :tags="['Mobile app', 'Thermostat', 'Smart Home', 'Tele2', 'Scrum']"/>
   </article>
 </template>
 
