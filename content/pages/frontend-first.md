@@ -9,3 +9,10 @@ In a modern application, the frontend completely determines the user experience.
 conforms to security and performance requirements.
 
 Frontmen focuses 100% on frontend architecture and development. The software we program is of such complexity, and the innovations succeed each other at such a pace, that this is not a job you do on the side. Our developers and architects are highly skilled. They live and breathe JavaScript. With a single goal in mind: translating top-notch techniques into new opportunities for our clients, with the shortest possible time to market.
+Template:
+
+@[BlockQuote]
+
+## Our challenge
+
+asdasdas
