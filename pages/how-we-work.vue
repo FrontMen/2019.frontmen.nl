@@ -1,33 +1,40 @@
 <template>
   <article>
-      <h1>We help you bring profitable new ideas to life, with a custom component application landscape</h1>
-      <p>
-        An increasingly important factor in your success is the ability to make the most of new software developments. We help
-        you look ahead, and figure out how to use technology to enhance your market position both now and in the future. In order
-        to fully comprehend your challenges, we’ll put together a development team that will operate from within your organization
-        and will accompany you on your journey.
-      </p>
+    <h1>We help you bring profitable new ideas to life, with a custom component application landscape</h1>
+    <p>
+      An increasingly important factor in your success is the ability to make the most of new software developments. We help
+      you look ahead, and figure out how to use technology to enhance your market position both now and in the future. In order
+      to fully comprehend your challenges, we’ll put together a development team that will operate from within your organization
+      and will accompany you on your journey.
+    </p>
 
     <div>image</div>
 
-      <h2>100% Agile</h2>
-      <p>
-        Our agile method enables us to be fast and flexible in finding the very best solutions together with our clients. We
-        work in three-week sprints. After this short period we deliver a working component, which we make available to the
-        end user to take for a test ride. The feedback is then used to make improvements.
-      </p>
-      <h2>Component Library</h2>
-      <p>
-        Even after the (web) app has been delivered, it is crucial for your organization to be able to implement new functionality
-        quickly, all the while preserving the quality of the code. That’s why, for large projects, we put together a Components
-        Library containing all bits and pieces of code. This allows you to create high-quality software independently, at any
-        time, and to significantly reduce the time it takes to get from idea to end product.
-      </p>
+    <h2>100% Agile</h2>
+    <p>
+      Our agile method enables us to be fast and flexible in finding the very best solutions together with our clients. We
+      work in three-week sprints. After this short period we deliver a working component, which we make available to the
+      end user to take for a test ride. The feedback is then used to make improvements.
+    </p>
+    <h2>Component Library</h2>
+    <p>
+      Even after the (web) app has been delivered, it is crucial for your organization to be able to implement new functionality
+      quickly, all the while preserving the quality of the code. That’s why, for large projects, we put together a Components
+      Library containing all bits and pieces of code. This allows you to create high-quality software independently, at any
+      time, and to significantly reduce the time it takes to get from idea to end product.
+    </p>
+    <MediumSection/>
   </article>
 </template>
 
 <script>
-export default {}
+import MediumSection from '../components/MediumSection'
+
+export default {
+  components: {
+    MediumSection
+  }
+}
 </script>
 
 <style>

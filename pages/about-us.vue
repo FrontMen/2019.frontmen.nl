@@ -10,18 +10,25 @@
 
     <div>image</div>
 
-    <h2>Always learning/developing</h2>
+    <h2>Always learning and developing</h2>
 
     <p>
       Knowledge development is central to our company. There is no leaning back when you’re a front-runner in a hyper-dynamic
       branch. We organize workshops, congresses and meet-ups to bring our own developers, clients and the growing
       frontend community in the Netherlands up to speed with the latest developments.
     </p>
+    <MediumSection/>
   </article>
 </template>
 
 <script>
-export default {}
+import MediumSection from '../components/MediumSection'
+
+export default {
+  components: {
+    MediumSection
+  }
+}
 </script>
 
 <style>

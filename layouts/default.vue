@@ -3,7 +3,7 @@
     <TopBar :nav-open="menuOpen" @openNav="toggleMenu"/>
     <Nav :nav-open="menuOpen" @toggleMenu="toggleMenu"/>
     <Main :nav-open="menuOpen" @toggleMenu="toggleMenu">
-      <nuxt class="page"/>
+      <nuxt class="article"/>
     </Main>
 
     <Footer :nav-open="menuOpen"/>
@@ -48,35 +48,37 @@ export default {
     background-color: #eee;
 }
 
+.article {
+  padding-top: 3rem
+}
 
-
-.page h1 {
+.article h1 {
   font-size: 3rem;
   font-family: Stratum, sans serif;
 }
 
-.page h2 {
+.article h2 {
   letter-spacing: .125rem;
   text-transform: uppercase;
 }
 
-.page p {
+.article p {
   font-size: 1.25rem;
 }
 
-.page p:first-of-type {
+.article p:first-of-type {
     color: var(--lightblue)
 }
 
 @media (max-width: 960px) {
-  .page {
+  .article {
     margin-left: 2rem;
     margin-right: 2rem;
   }
 }
 
 @media (min-width: 961px) {
-  .page {
+  .article {
     margin-left: 8rem;
     margin-right: 8rem;
   }

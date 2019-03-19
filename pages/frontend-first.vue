@@ -11,18 +11,27 @@
 
     <div>image</div>
 
-    quote
+    <BlockQuote />
       <p>
         Frontmen focuses 100% on frontend architecture and development. The software we program is of such complexity, and
         the innovations succeed each other at such a pace, that this is not a job you do on the side. Our developers and
         architects are highly skilled. They live and breathe JavaScript. With a single goal in mind: translating top-notch
         techniques into new opportunities for our clients, with the shortest possible time to market.
-      </p>mediumblok
+      </p>
+      <MediumSection />
   </article>
 </template>
 
 <script>
-export default {}
+import MediumSection from "../components/MediumSection"
+import BlockQuote from "../components/BlockQuote"
+
+export default {
+  components: {
+    BlockQuote,
+    MediumSection
+  }
+}
 </script>
 
 <style>

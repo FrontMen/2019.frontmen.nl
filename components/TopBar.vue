@@ -7,7 +7,7 @@
     }"
   >
     <button class="menu-button" @click="openNav">
-      <Icon title="Menu" name="menu-hamburger"/>
+      <img src="/images/icon-menu-hamburger.svg" class="logo" alt="Menu">
     </button>
 
     <h1 class="page-title" v-if="isHomePage">FRONTMEN</h1>
@@ -16,7 +16,7 @@
       {{ currentRoute}}
     </h1>
 
-    <img src="~/static/images/fm-monogram-logo.svg" class="logo" alt="Frontmen">
+    <img src="/images/fm-monogram-logo.svg" class="logo" alt="Frontmen">
   </header>
 </template>
 

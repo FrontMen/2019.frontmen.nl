@@ -88,20 +88,11 @@ export default {
   margin: 0;
 }
 
+/* Triangle-divider is fixed from 961px and above*/
 @media (max-width: 960px) {
   .info-container {
     margin: 0 -2rem;
   }
-}
-
-@media (min-width: 961px) {
-  .info-container {
-    margin: 0 -8rem;
-  }
-}
-
-/* Triangle-divider is fixed from 961px and above*/
-@media (max-width: 960px) {
   .triangle-divider {
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
@@ -109,6 +100,9 @@ export default {
 }
 
 @media (min-width: 961px) {
+  .info-container {
+    margin: 0 -8rem;
+  }
   .triangle-divider {
     border-left: 480px solid transparent;
     border-right: 480px solid transparent;

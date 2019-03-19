@@ -1,8 +1,8 @@
 <template>
   <blockquote class="blockquote">
-    <p
+    <span
       class="quote"
-    >Any application that can be written in JavaScript, will eventually be written in JavaScript</p>
+    >Any application that can be written in JavaScript, will eventually be written in JavaScript</span>
     <footer class="footer">
       <cite>
         <strong>Jeff Atwood</strong>
@@ -21,6 +21,8 @@ export default {
 <style scoped>
 .blockquote {
   color: var(--orange);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .quote {

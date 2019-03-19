@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <section class="section">
+  <div class="section-container">
+    <section>
       <h3 class="header">Frontmen on Medium</h3>
       <div class="content">
         <a href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4">
@@ -11,10 +11,10 @@
         </a>
         <aside>
           <h4 class="title">Art of debugging with Chrome DevTools</h4>
-          <p>
+          <div class="description">
             Chrome DevTools come with an array of features that help developers debug their apps effectively,
             and therefore find and fix the bugs faster. There are a lot of power tools in devtools which are not quite well-known amongst the developers.
-          </p>
+          </div>
           <div class="button-wrapper">
             <a
               href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4"
@@ -38,8 +38,9 @@ export default {
 </script>
 
 <style scoped>
-.section {
+.section-container {
   background-color: var(--lightblue);
+  margin-top: 4rem;
 }
 
 .header {
@@ -55,6 +56,12 @@ export default {
 .title {
   color: white;
   margin-top: 0.5rem; /* for alignment with medium image*/
+}
+
+.description {
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 .content {
@@ -92,6 +99,10 @@ export default {
     padding: 0 2rem;
     flex-wrap: wrap;
   }
+  .section-container {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
 }
 
 @media (min-width: 961px) {
@@ -104,6 +115,10 @@ export default {
   }
   .content {
     padding: 0 8rem;
+  }
+  .section-container {
+    margin-left: -8rem;
+    margin-right: -8rem;
   }
 }
 
