@@ -34,11 +34,22 @@
 
     <h2>The result</h2>
     <p>The app is used to great satisfaction by 300.000+ households in three countries. Eneco expects the number of users per country, and the number of participating countries to rise significantly in the future.</p>
+    <BadgeBar :badges="['react', 'redux', 'jest']"/>
+    <InfoSection/>
+
   </article>
 </template>
 
 <script>
-export default {}
+import BadgeBar from '@/components/BadgeBar'
+import InfoSection from '@/components/InfoSection'
+
+export default {
+  components: {
+    BadgeBar,
+    InfoSection
+  }
+}
 </script>
 
 <style>

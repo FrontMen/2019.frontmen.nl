@@ -9,10 +9,8 @@
             src="https://cdn-images-1.medium.com/max/2000/1*K2Utn78MaVzlUeIagOEZRg.png"
           >
         </a>
-
         <aside>
           <h4 class="title">Art of debugging with Chrome DevTools</h4>
-
           <p>
             Chrome DevTools come with an array of features that help developers debug their apps effectively,
             and therefore find and fix the bugs faster. There are a lot of power tools in devtools which are not quite well-known amongst the developers.
@@ -55,7 +53,7 @@ export default {
 
 .title {
   color: white;
-  margin-top: .5rem; /* for alignment with medium image*/
+  margin-top: 0.5rem; /* for alignment with medium image*/
 }
 
 .content {
@@ -77,6 +75,7 @@ export default {
   text-transform: uppercase;
   border: 0;
   outline: none;
+  cursor: pointer
 }
 
 /* Triangle-divider is fixed from 961px and above*/
@@ -86,10 +85,11 @@ export default {
     border-right: 50vw solid transparent;
   }
   .header {
-    width: 100%;
+    display: block;
   }
   .content {
     padding: 0 2rem;
+    flex-wrap: wrap;
   }
 }
 

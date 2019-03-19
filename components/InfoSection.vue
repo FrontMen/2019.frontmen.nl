@@ -1,34 +1,28 @@
 <template>
-  <section>
-    <div>
-      <h2 class="heading">Our Tools</h2>
-      <BadgeBar type="tech" :badges="['react', 'redux', 'jest']"/>
+  <section class="info">
+    <div class="left-content">
+      <span>
+        <img src="/images/frontdesk-avatar.png" class="image" alt="frontdesk-avatar">
+      </span>
+      <span>
+        <strong class="title">WANT TO KNOW MORE?</strong>
+        <ul class="list">
+          <li>Call or mail us!</li>
+          <li>
+            <a href="tel:0302658108">030 - 26 58 108</a>
+          </li>
+          <li>
+            <a href="mailto:info@frontmen.nl">info@frontmen.nl</a>
+          </li>
+        </ul>
+      </span>
     </div>
-    <div class="info">
-      <div class="left-content">
-        <span>
-          <img src="/images/frontdesk-avatar.png" class="image" alt="frontdesk-avatar">
-        </span>
-        <span>
-          <strong class="title">WANT TO KNOW MORE?</strong>
-          <ul class="list">
-            <li>Call or mail us!</li>
-            <li>
-              <a href="tel:0302658108">030 - 26 58 108</a>
-            </li>
-            <li>
-              <a href="mailto:info@frontmen.nl">info@frontmen.nl</a>
-            </li>
-          </ul>
-        </span>
+    <aside class="right-content" v-show="tags">
+      <strong class="title">Tags</strong>
+      <div>
+        <Tag v-for="(tag, i) in tags" :key="i" :name="tag"/>
       </div>
-      <aside class="right-content" v-show="tags">
-        <strong class="title">Tags</strong>
-        <div>
-          <Tag v-for="(tag, i) in tags" :key="i" :name="tag"/>
-        </div>
-      </aside>
-    </div>
+    </aside>
   </section>
 </template>
 
@@ -43,10 +37,9 @@ export default {
   },
   props: {
     tags: {
-      default: ['react', 'redux', 'html'],
       type: Array
     },
-    tools: {
+    badges: {
       type: Array
     }
   }
@@ -60,18 +53,6 @@ export default {
   line-height: 1.5;
   margin-bottom: 2rem;
   text-transform: uppercase;
-}
-
-@media (max-width: 960px) {
-  .heading {
-    padding: 0 2rem;
-  }
-}
-
-@media (min-width: 961px) {
-  .heading {
-    padding: 0 8rem;
-  }
 }
 
 .image {
@@ -102,5 +83,17 @@ export default {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 960px) {
+  .info {
+    margin: 0 -2rem;
+  }
+}
+
+@media (min-width: 961px) {
+  .info {
+    margin: 0 -8rem;
+  }
 }
 </style>

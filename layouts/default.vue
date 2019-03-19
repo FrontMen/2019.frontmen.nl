@@ -4,9 +4,6 @@
     <Nav :nav-open="menuOpen" @toggleMenu="toggleMenu"/>
     <Main :nav-open="menuOpen" @toggleMenu="toggleMenu">
       <nuxt class="page"/>
-      <BlockQuote/>
-      <InfoSection/>
-      <MediumSection/>
     </Main>
 
     <Footer :nav-open="menuOpen"/>

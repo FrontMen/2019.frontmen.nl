@@ -1,22 +1,25 @@
 <template>
-  <section class="badge-bar">
-    <Badge
-      v-for="(badge, i) in badges"
-      :key="i"
-      :type="type"
-      :name="badge"
-      :color="getColor(i)"
-      :size="size"
-    />
+  <section>
+    <h2>Our Tools</h2>
+    <div class="badge-bar">
+      <Badge
+        v-for="(badge, i) in badges"
+        :key="i"
+        :type="type"
+        :name="badge"
+        :color="getColor(i)"
+        :size="size"
+      />
+    </div>
   </section>
 </template>
 <script>
 import Badge from './Badge'
-const colors =  [
-        '#00cccc', //lightblue
-        '#1f1e32', //darkblue
-        '#ff5900' //orange
-      ]
+const colors = [
+  '#00cccc', //lightblue
+  '#1f1e32', //darkblue
+  '#ff5900' //orange
+]
 export default {
   name: 'BadgeBar',
   components: {
@@ -51,7 +54,19 @@ export default {
 <style scoped>
 .badge-bar {
   display: flex;
-  margin: 0 8rem -8rem 8rem;
+  margin: 0 8rem -8rem 0;
+}
+
+@media (max-width: 960px) {
+  .heading {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 961px) {
+  .heading {
+    padding: 0 8rem;
+  }
 }
 </style>
 
