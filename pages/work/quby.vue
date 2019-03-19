@@ -1,45 +1,39 @@
 <template>
   <article>
-    <div>
-      <h1>How we helped Toon travel across the border and added an important new feature.</h1>
-      <p>For several years now, Toon has been the most used smart thermostat in the Netherlands. High time for Eneco to send Toon across the border. Introducing it abroad did require a new – hybrid – app. We ensured that the Toon thermostat was prepared for home automation functions and built in an important new feature: the Waste Checker.</p>
-    </div>
+    <h1>How we helped Toon travel across the border and added an important new feature.</h1>
+    <p>For several years now, Toon has been the most used smart thermostat in the Netherlands. High time for Eneco to send Toon across the border. Introducing it abroad did require a new – hybrid – app. We ensured that the Toon thermostat was prepared for home automation functions and built in an important new feature: the Waste Checker.</p>image
+    <h2>Our challenge</h2>
+    <p>After successfully rolling out Toon in the Netherlands, Eneco decided to cross the border. The smart thermostat was to be introduced in Belgium and Spain, possibly followed by more countries.
+      <br>The existing Toon platform was not prepared for this step:
+    </p>
 
-    image
-    <div>
-      <h2>Our challenge</h2>
-      <p>After successfully rolling out Toon in the Netherlands, Eneco decided to cross the border. The smart thermostat was to be introduced in Belgium and Spain, possibly followed by more countries.
-        <br>The existing Toon platform was not prepared for this step:
-      </p>
+    <ul>
+      <li>The app was built native for both Android and iOS, which meant that with every introduction in a new country both code bases would need to be duplicated.</li>
+      <li>The existing app did not provide for internationalization. Any language or location specific differences would have to be programmed manually.</li>
+      <li>Toon would be sold through third parties (energy partners) abroad. For that reason Eneco wanted to implement certain functionalities as so-called ‘features’, allowing for specific paid functions to be turned on or off per country or customer.</li>
+    </ul>
 
-      <ul>
-        <li>The app was built native for both Android and iOS, which meant that with every introduction in a new country both code bases would need to be duplicated.</li>
-        <li>The existing app did not provide for internationalization. Any language or location specific differences would have to be programmed manually.</li>
-        <li>Toon would be sold through third parties (energy partners) abroad. For that reason Eneco wanted to implement certain functionalities as so-called ‘features’, allowing for specific paid functions to be turned on or off per country or customer.</li>
-      </ul>
+    <p>A hybrid application should replace both existing native apps (iOS and Android), perform equally well on all devices and be easy to maintain. This last demand was a particular requirement, considering the international expansion.</p>
 
-      <p>A hybrid application should replace both existing native apps (iOS and Android), perform equally well on all devices and be easy to maintain. This last demand was a particular requirement, considering the international expansion.</p>
+    <h2>Our approach</h2>
+    <p>
+      First of all we determined the architecture needed to tackle this challenge: a hybrid app, completely component based. A platform that would enable Eneco to easily roll out functionality internationally, without code duplication.
+      A team of frontend specialists set to work and, scrumming their way through, replaced the existing native apps with one hybrid app, which is now also running in Belgium and Spain.
+    </p>
+    <p>In this case, the functioning of the app, and therefor the user experience, depends heavily on properly functioning endpoints: a fast and robust backend. This is why FrontMen defined the API themselves. Furthermore, in the final release of the app we built in a new feature, the Waste Checker.</p>
+    <a
+      href="https://www.eneco.nl/energieproducten/toon-thermostaat/verspillingschecker/"
+      target="_blank"
+      rel="noopener"
+    >More info about Waste Checker</a>
+    <br>
+    <br>
 
-      <h2>Our approach</h2>
-      <p>
-        First of all we determined the architecture needed to tackle this challenge: a hybrid app, completely component based. A platform that would enable Eneco to easily roll out functionality internationally, without code duplication.
-        A team of frontend specialists set to work and, scrumming their way through, replaced the existing native apps with one hybrid app, which is now also running in Belgium and Spain.
-      </p>
-      <p>In this case, the functioning of the app, and therefor the user experience, depends heavily on properly functioning endpoints: a fast and robust backend. This is why FrontMen defined the API themselves. Furthermore, in the final release of the app we built in a new feature, the Waste Checker.</p>
-      <a
-        href="https://www.eneco.nl/energieproducten/toon-thermostaat/verspillingschecker/"
-        target="_blank"
-        rel="noopener"
-      >More info about Waste Checker</a>
-      <br>
-      <br>
+    <h2>Our product</h2>
+    <p>The development team delivered a hybrid app including an innovative core feature: the Waste Checker. The app no longer has separate iOS and Android code, significantly simplifying its maintenance. The app has been prepared for internationalization, and can easily be rolled out in more countries in the future, with a different look and feel and distinct functionality.</p>
 
-      <h2>Our product</h2>
-      <p>The development team delivered a hybrid app including an innovative core feature: the Waste Checker. The app no longer has separate iOS and Android code, significantly simplifying its maintenance. The app has been prepared for internationalization, and can easily be rolled out in more countries in the future, with a different look and feel and distinct functionality.</p>
-
-      <h2>The result</h2>
-      <p>The app is used to great satisfaction by 300.000+ households in three countries. Eneco expects the number of users per country, and the number of participating countries to rise significantly in the future.</p>
-    </div>
+    <h2>The result</h2>
+    <p>The app is used to great satisfaction by 300.000+ households in three countries. Eneco expects the number of users per country, and the number of participating countries to rise significantly in the future.</p>
   </article>
 </template>
 

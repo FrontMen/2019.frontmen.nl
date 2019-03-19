@@ -1,6 +1,5 @@
 <template>
   <article>
-    <div>
       <h1>We help you bring profitable new ideas to life, with a custom component application landscape</h1>
       <p>
         An increasingly important factor in your success is the ability to make the most of new software developments. We help
@@ -8,11 +7,9 @@
         to fully comprehend your challenges, we’ll put together a development team that will operate from within your organization
         and will accompany you on your journey.
       </p>
-    </div>
 
     <div>image</div>
 
-    <div>
       <h2>100% Agile</h2>
       <p>
         Our agile method enables us to be fast and flexible in finding the very best solutions together with our clients. We
@@ -26,7 +23,6 @@
         Library containing all bits and pieces of code. This allows you to create high-quality software independently, at any
         time, and to significantly reduce the time it takes to get from idea to end product.
       </p>
-    </div>
   </article>
 </template>
 
