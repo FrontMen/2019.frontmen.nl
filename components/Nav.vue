@@ -4,14 +4,26 @@
       <li class="nav-item">
         <nuxt-link @click.native="closeNav" class="nav-link" :to="'/'">Home</nuxt-link>
       </li>
-            <li class="nav-item">
+      <li class="nav-item">
         <nuxt-link @click.native="closeNav" class="nav-link" :to="'/frontend-first'">Frontend first</nuxt-link>
       </li>
       <li class="nav-item">
-        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/page-1'">Page 1</nuxt-link>
+        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/how-we-work'">How we work</nuxt-link>
+      </li>
+      <li class="nav-heading">Work</li>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <nuxt-link @click.native="closeNav" class="nav-link" :to="'/work/quby'">- Quby</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link @click.native="closeNav" class="nav-link" :to="'/work/tele2'">- Tele2</nuxt-link>
+        </li>
+      </ul>
+      <li class="nav-item">
+        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/about-us'">About us</nuxt-link>
       </li>
       <li class="nav-item">
-        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/page-2'">Page 2</nuxt-link>
+        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/contact'">Contact us</nuxt-link>
       </li>
     </ul>
   </nav>
@@ -52,16 +64,27 @@ export default {
   margin: 0;
 }
 
+.nav-heading {
+  margin: 0;
+  color: var(--mediumgrey);
+  margin-bottom: 1rem;
+  font-family: 'Stratum', 'sans-serif';
+  font-size: 1.75rem;
+  line-height: 1.3;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .nav-item {
   text-decoration: none;
 }
 
 .nav-link {
   display: block;
-  color: #a5a5ad;
-  padding-bottom: 1rem;
+  color: white;
+  margin-bottom: 1rem;
   font-family: 'Stratum', 'sans-serif';
-  font-size: 2rem;
   font-size: 1.75rem;
   line-height: 1.3;
   font-weight: 400;
@@ -70,10 +93,10 @@ export default {
 }
 
 .nav-link:hover {
-  color: white;
+  color: var(--lightblue);
 }
 
 .nav-link:active {
-  color: var(--lightblue);
+  color: var(--orange);
 }
 </style>

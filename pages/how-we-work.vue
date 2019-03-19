@@ -1,23 +1,32 @@
 <template>
   <article>
-      <h1>It takes an expert to do an excellent job</h1>
+    <div>
+      <h1>We help you bring profitable new ideas to life, with a custom component application landscape</h1>
       <p>
-        In a modern application, the frontend completely determines the user experience. It goes without saying that nothing
-        should go wrong there. Everything needs to be coded in such a way that the app works great and feels fantastic. Anytime
-        and anywhere, on all devices, in any browser and on any platform. In addition, the code should be logical and well-organized,
-        fit into the existing enterprise architecture and, furthermore, be of a level of quality that is easy to maintain and
-        conforms to security and performance requirements.
+        An increasingly important factor in your success is the ability to make the most of new software developments. We help
+        you look ahead, and figure out how to use technology to enhance your market position both now and in the future. In order
+        to fully comprehend your challenges, we’ll put together a development team that will operate from within your organization
+        and will accompany you on your journey.
       </p>
+    </div>
 
     <div>image</div>
 
-    quote
+    <div>
+      <h2>100% Agile</h2>
       <p>
-        Frontmen focuses 100% on frontend architecture and development. The software we program is of such complexity, and
-        the innovations succeed each other at such a pace, that this is not a job you do on the side. Our developers and
-        architects are highly skilled. They live and breathe JavaScript. With a single goal in mind: translating top-notch
-        techniques into new opportunities for our clients, with the shortest possible time to market.
-      </p>mediumblok
+        Our agile method enables us to be fast and flexible in finding the very best solutions together with our clients. We
+        work in three-week sprints. After this short period we deliver a working component, which we make available to the
+        end user to take for a test ride. The feedback is then used to make improvements.
+      </p>
+      <h2>Component Library</h2>
+      <p>
+        Even after the (web) app has been delivered, it is crucial for your organization to be able to implement new functionality
+        quickly, all the while preserving the quality of the code. That’s why, for large projects, we put together a Components
+        Library containing all bits and pieces of code. This allows you to create high-quality software independently, at any
+        time, and to significantly reduce the time it takes to get from idea to end product.
+      </p>
+    </div>
   </article>
 </template>
 

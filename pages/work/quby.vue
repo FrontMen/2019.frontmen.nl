@@ -1,23 +1,45 @@
 <template>
   <article>
-      <h1>It takes an expert to do an excellent job</h1>
-      <p>
-        In a modern application, the frontend completely determines the user experience. It goes without saying that nothing
-        should go wrong there. Everything needs to be coded in such a way that the app works great and feels fantastic. Anytime
-        and anywhere, on all devices, in any browser and on any platform. In addition, the code should be logical and well-organized,
-        fit into the existing enterprise architecture and, furthermore, be of a level of quality that is easy to maintain and
-        conforms to security and performance requirements.
+    <div>
+      <h1>How we helped Toon travel across the border and added an important new feature.</h1>
+      <p>For several years now, Toon has been the most used smart thermostat in the Netherlands. High time for Eneco to send Toon across the border. Introducing it abroad did require a new – hybrid – app. We ensured that the Toon thermostat was prepared for home automation functions and built in an important new feature: the Waste Checker.</p>
+    </div>
+
+    image
+    <div>
+      <h2>Our challenge</h2>
+      <p>After successfully rolling out Toon in the Netherlands, Eneco decided to cross the border. The smart thermostat was to be introduced in Belgium and Spain, possibly followed by more countries.
+        <br>The existing Toon platform was not prepared for this step:
       </p>
 
-    <div>image</div>
+      <ul>
+        <li>The app was built native for both Android and iOS, which meant that with every introduction in a new country both code bases would need to be duplicated.</li>
+        <li>The existing app did not provide for internationalization. Any language or location specific differences would have to be programmed manually.</li>
+        <li>Toon would be sold through third parties (energy partners) abroad. For that reason Eneco wanted to implement certain functionalities as so-called ‘features’, allowing for specific paid functions to be turned on or off per country or customer.</li>
+      </ul>
 
-    quote
+      <p>A hybrid application should replace both existing native apps (iOS and Android), perform equally well on all devices and be easy to maintain. This last demand was a particular requirement, considering the international expansion.</p>
+
+      <h2>Our approach</h2>
       <p>
-        Frontmen focuses 100% on frontend architecture and development. The software we program is of such complexity, and
-        the innovations succeed each other at such a pace, that this is not a job you do on the side. Our developers and
-        architects are highly skilled. They live and breathe JavaScript. With a single goal in mind: translating top-notch
-        techniques into new opportunities for our clients, with the shortest possible time to market.
-      </p>mediumblok
+        First of all we determined the architecture needed to tackle this challenge: a hybrid app, completely component based. A platform that would enable Eneco to easily roll out functionality internationally, without code duplication.
+        A team of frontend specialists set to work and, scrumming their way through, replaced the existing native apps with one hybrid app, which is now also running in Belgium and Spain.
+      </p>
+      <p>In this case, the functioning of the app, and therefor the user experience, depends heavily on properly functioning endpoints: a fast and robust backend. This is why FrontMen defined the API themselves. Furthermore, in the final release of the app we built in a new feature, the Waste Checker.</p>
+      <a
+        href="https://www.eneco.nl/energieproducten/toon-thermostaat/verspillingschecker/"
+        target="_blank"
+        rel="noopener"
+      >More info about Waste Checker</a>
+      <br>
+      <br>
+
+      <h2>Our product</h2>
+      <p>The development team delivered a hybrid app including an innovative core feature: the Waste Checker. The app no longer has separate iOS and Android code, significantly simplifying its maintenance. The app has been prepared for internationalization, and can easily be rolled out in more countries in the future, with a different look and feel and distinct functionality.</p>
+
+      <h2>The result</h2>
+      <p>The app is used to great satisfaction by 300.000+ households in three countries. Eneco expects the number of users per country, and the number of participating countries to rise significantly in the future.</p>
+    </div>
   </article>
 </template>
 

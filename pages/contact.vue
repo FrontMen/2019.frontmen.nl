@@ -1,23 +1,38 @@
 <template>
   <article>
-      <h1>It takes an expert to do an excellent job</h1>
-      <p>
-        In a modern application, the frontend completely determines the user experience. It goes without saying that nothing
-        should go wrong there. Everything needs to be coded in such a way that the app works great and feels fantastic. Anytime
-        and anywhere, on all devices, in any browser and on any platform. In addition, the code should be logical and well-organized,
-        fit into the existing enterprise architecture and, furthermore, be of a level of quality that is easy to maintain and
-        conforms to security and performance requirements.
-      </p>
+    <div>
+      <h1>You can always mail us or give us a call...</h1>
+    </div>
 
     <div>image</div>
 
-    quote
-      <p>
-        Frontmen focuses 100% on frontend architecture and development. The software we program is of such complexity, and
-        the innovations succeed each other at such a pace, that this is not a job you do on the side. Our developers and
-        architects are highly skilled. They live and breathe JavaScript. With a single goal in mind: translating top-notch
-        techniques into new opportunities for our clients, with the shortest possible time to market.
-      </p>mediumblok
+    <div>
+      <h2>You can find us in Amsterdam, Utrecht and Eindhoven</h2>
+
+      <div>
+        <div>
+          <h3>Amsterdam</h3>
+          <span>Meeuwenlaan 98</span>
+          <span>1021 JL Amsterdam</span>
+          <a href="tel:0302658108">030 - 26 58 108</a>
+          <a href="mailto:info@frontmen.nl">info@frontmen.nl</a>
+        </div>
+        <div>
+          <h3>Utrecht</h3>
+          <span>Tractieweg 41 (Studio B)</span>
+          <span>3534 AP Utrecht</span>
+          <a href="tel:0302658108">030 - 26 58 108</a>
+          <a href="mailto:info@frontmen.nl">info@frontmen.nl</a>
+        </div>
+        <div>
+          <h3>Eindhoven</h3>
+          <span>Frederiklaan 10e</span>
+          <span>5616 NH Eindhoven</span>
+          <a href="tel:0302658108">030 - 26 58 108</a>
+          <a href="mailto:info@frontmen.nl">info@frontmen.nl</a>
+        </div>
+      </div>
+    </div>
   </article>
 </template>
 

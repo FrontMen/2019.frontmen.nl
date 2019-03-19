@@ -10,9 +10,13 @@
       <Icon title="Menu" name="menu-hamburger"/>
     </button>
 
-    <h1 class="page-title">{{ currentRoute}}</h1>
+    <h1 class="page-title" v-if="isHomePage">FRONTMEN</h1>
+    <h1 class="page-title" v-else>
+      <span class="page-category" v-show="isWork">WORK</span>
+      {{ currentRoute}}
+    </h1>
 
-    <img src="/images/fm-monogram-logo.svg" class="logo" alt="Frontmen">
+    <img src="~/static/images/fm-monogram-logo.svg" class="logo" alt="Frontmen">
   </header>
 </template>
 
@@ -34,8 +38,15 @@ export default {
   },
   computed: {
     currentRoute() {
-      console.log(this.$route)
-      return this.$route.path.replace(/-/g, ' ').substring(1) //remove '/' and '-' from route.path (route.name is not accurate)
+      //remove '-work' and '-' from route name
+      return this.$route.name.replace(/work-|-/g, ' ')
+    },
+    isWork() {
+      //checks if route starts with work
+      return /^work/.test(this.$route.name)
+    },
+    isHomePage() {
+      return '/' === this.$route.path
     }
   },
   methods: {
@@ -51,7 +62,7 @@ export default {
   background-color: transparent;
   outline: none;
   border: 0;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 .top-bar {
@@ -71,11 +82,15 @@ export default {
   flex: 1;
   text-transform: uppercase;
   font-family: Stratum;
-  color: var(--lightgrey);
-
+  color: white;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.page-category {
+  color: var(--orange);
+  font-family: Stratum;
 }
 
 .logo {

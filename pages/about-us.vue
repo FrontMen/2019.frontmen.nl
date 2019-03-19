@@ -1,23 +1,26 @@
 <template>
   <article>
-      <h1>It takes an expert to do an excellent job</h1>
+    <div>
+      <h1>We get your apps out there. Faster and better</h1>
       <p>
-        In a modern application, the frontend completely determines the user experience. It goes without saying that nothing
-        should go wrong there. Everything needs to be coded in such a way that the app works great and feels fantastic. Anytime
-        and anywhere, on all devices, in any browser and on any platform. In addition, the code should be logical and well-organized,
-        fit into the existing enterprise architecture and, furthermore, be of a level of quality that is easy to maintain and
-        conforms to security and performance requirements.
+        Frontmen was established in 2012. It has since grown to a company of almost 100 enthusiastic developers and architects.
+        Professionals working in small teams at (and with) our clients to create the best frontend applications based
+        on the latest JavaScript standards. With us, the app in itself is never the end goal. We deliver something that
+        lasts longer: the power and the tools to innovate faster and better in the future.
       </p>
+    </div>
 
     <div>image</div>
 
-    quote
+    <div>
+      <h2>Always learning/developing</h2>
+
       <p>
-        Frontmen focuses 100% on frontend architecture and development. The software we program is of such complexity, and
-        the innovations succeed each other at such a pace, that this is not a job you do on the side. Our developers and
-        architects are highly skilled. They live and breathe JavaScript. With a single goal in mind: translating top-notch
-        techniques into new opportunities for our clients, with the shortest possible time to market.
-      </p>mediumblok
+        Knowledge development is central to our company. There is no leaning back when you’re a front-runner in a hyper-dynamic
+        branch. We organize workshops, congresses and meet-ups to bring our own developers, clients and the growing
+        frontend community in the Netherlands up to speed with the latest developments.
+      </p>
+    </div>
   </article>
 </template>
 
