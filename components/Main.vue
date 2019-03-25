@@ -1,6 +1,6 @@
 <template>
   <main class="main" role="main" :style="{ transform: `translateX(${navOpen ? 300 : 0}px)`}">
-    <slot/>
+    <slot />
   </main>
 </template>
 

@@ -17,7 +17,7 @@
       branch. We organize workshops, congresses and meet-ups to bring our own developers, clients and the growing
       frontend community in the Netherlands up to speed with the latest developments.
     </p>
-    <MediumSection/>
+    <MediumSection />
   </article>
 </template>
 

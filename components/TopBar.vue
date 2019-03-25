@@ -3,17 +3,19 @@
     class="top-bar"
     role="banner"
     :style="{
-    transform: `translate(${navOpen ? 300 : 0 }px)`
+      transform: `translate(${navOpen ? 300 : 0 }px)`
     }"
   >
     <button class="menu-button" @click="openNav">
       <img src="/images/icon-menu-hamburger.svg" class="logo" alt="Menu">
     </button>
 
-    <h1 class="page-title" v-if="isHomePage">FRONTMEN</h1>
-    <h1 class="page-title" v-else>
-      <span class="page-category" v-show="isWork">WORK</span>
-      {{ currentRoute}}
+    <h1 v-if="isHomePage" class="page-title">
+      FRONTMEN
+    </h1>
+    <h1 v-else class="page-title">
+      <span v-show="isWork" class="page-category">WORK</span>
+      {{ currentRoute }}
     </h1>
 
     <img src="/images/fm-monogram-logo.svg" class="logo" alt="Frontmen">
@@ -21,15 +23,8 @@
 </template>
 
 <script>
-import Logo from './Logo'
-import Icon from './Icon'
-
 export default {
   name: 'TopBar',
-  components: {
-    Icon,
-    Logo
-  },
   props: {
     navOpen: {
       type: Boolean,
@@ -38,15 +33,15 @@ export default {
   },
   computed: {
     currentRoute() {
-      //remove '-work' and '-' from route name
+      // remove '-work' and '-' from route name
       return this.$route.name.replace(/work-|-/g, ' ')
     },
     isWork() {
-      //checks if route starts with work
+      // checks if route starts with work
       return /^work/.test(this.$route.name)
     },
     isHomePage() {
-      return '/' === this.$route.path
+      return this.$route.path === '/'
     }
   },
   methods: {

@@ -23,7 +23,7 @@
       Library containing all bits and pieces of code. This allows you to create high-quality software independently, at any
       time, and to significantly reduce the time it takes to get from idea to end product.
     </p>
-    <MediumSection/>
+    <MediumSection />
   </article>
 </template>
 

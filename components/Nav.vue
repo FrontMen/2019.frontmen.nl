@@ -2,28 +2,44 @@
   <nav class="side-bar" :style="{ transform: `translateX(${navOpen ? 0 : -300}px)`}">
     <ul class="nav-list">
       <li class="nav-item">
-        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/'">Home</nuxt-link>
+        <nuxt-link class="nav-link" :to="'/'" @click.native="closeNav">
+          Home
+        </nuxt-link>
       </li>
       <li class="nav-item">
-        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/frontend-first'">Frontend first</nuxt-link>
+        <nuxt-link class="nav-link" :to="'/frontend-first'" @click.native="closeNav">
+          Frontend first
+        </nuxt-link>
       </li>
       <li class="nav-item">
-        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/how-we-work'">How we work</nuxt-link>
+        <nuxt-link class="nav-link" :to="'/how-we-work'" @click.native="closeNav">
+          How we work
+        </nuxt-link>
       </li>
-      <li class="nav-heading">Work</li>
+      <li class="nav-heading">
+        Work
+      </li>
       <ul class="nav-list">
         <li class="nav-item">
-          <nuxt-link @click.native="closeNav" class="nav-link" :to="'/work/quby'">- Quby</nuxt-link>
+          <nuxt-link class="nav-link" :to="'/work/quby'" @click.native="closeNav">
+            - Quby
+          </nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link @click.native="closeNav" class="nav-link" :to="'/work/tele2'">- Tele2</nuxt-link>
+          <nuxt-link class="nav-link" :to="'/work/tele2'" @click.native="closeNav">
+            - Tele2
+          </nuxt-link>
         </li>
       </ul>
       <li class="nav-item">
-        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/about-us'">About us</nuxt-link>
+        <nuxt-link class="nav-link" :to="'/about-us'" @click.native="closeNav">
+          About us
+        </nuxt-link>
       </li>
       <li class="nav-item">
-        <nuxt-link @click.native="closeNav" class="nav-link" :to="'/contact'">Contact us</nuxt-link>
+        <nuxt-link class="nav-link" :to="'/contact'" @click.native="closeNav">
+          Contact us
+        </nuxt-link>
       </li>
     </ul>
   </nav>

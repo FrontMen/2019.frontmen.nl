@@ -1,6 +1,6 @@
 <template>
   <span class="badge">
-    <header
+    <span
       :style="{
         borderBottom: triangleY,
         borderRight: triangleX,
@@ -16,7 +16,7 @@
       }"
     >
       <span :style="{ padding: `0 ${0.2 * sizeNumber}rem` }">
-        <img width="100%" :src="`/images/badges-${type}/${name}.svg`">
+        <img width="100%" :src="`/images/badges-${type}/${name}.svg`" :alt="`${name} logo`">
       </span>
       <span
         v-show="showLabel"
@@ -24,7 +24,7 @@
         :style="{ fontSize: .1 * sizeNumber + 'rem',}"
       >{{ name }}</span>
     </span>
-    <footer
+    <span
       :style="{
         borderTop: triangleY,
         borderRight: triangleX,
@@ -35,8 +35,7 @@
 </template>
 
 <script>
-//todo: If you'd rather have a couple of fixed sizes use these
-const sizes = {
+export const SIZES = {
   xs: 3,
   s: 5,
   m: 10,
@@ -46,23 +45,10 @@ const sizes = {
 
 export default {
   name: 'Badge',
-  mounted() {
-    console.log('sizeNumber', this.sizeNumber) // I'm text inside the component.
-  },
-  computed: {
-    sizeNumber() {
-      return sizes[this.size]
-    },
-    triangleY() {
-      return 0.3 * this.sizeNumber + 'rem solid ' + this.color
-    },
-    triangleX() {
-      return 0.5 * this.sizeNumber + 'rem solid transparent'
-    }
-  },
   props: {
     color: {
-      default: '#1f1e32' //darkblue
+      type: String,
+      default: '#1f1e32' // darkblue
     },
     type: {
       required: true,
@@ -76,13 +62,25 @@ export default {
       required: true
     },
     showLabel: {
+      type: Boolean,
       default: true
     },
     size: {
       default: 'm',
       validator: value => {
-        return ['s', 'm', 'l', 'xl'].indexOf(value) !== -1
+        return Object.keys(SIZES).indexOf(value) !== -1
       }
+    }
+  },
+  computed: {
+    sizeNumber() {
+      return SIZES[this.size]
+    },
+    triangleY() {
+      return 0.3 * this.sizeNumber + 'rem solid ' + this.color
+    },
+    triangleX() {
+      return 0.5 * this.sizeNumber + 'rem solid transparent'
     }
   }
 }

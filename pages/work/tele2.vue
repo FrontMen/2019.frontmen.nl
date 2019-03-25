@@ -25,8 +25,8 @@
 
     <h2>The result</h2>
     <p>The app is now –after two internal releases and one beta release– used by over 200,000 people, and receives excellent feedback. It appears that users enjoy helping to make the app smarter.</p>
-    <BadgeBar :badges="['react', 'redux', 'redux-saga']"/>
-    <InfoSection :tags="['Mobile app', 'Artificial intelligence', 'Chatbot']"/>
+    <BadgeBar :badges="['react', 'redux', 'redux-saga']" />
+    <InfoSection :tags="['Mobile app', 'Artificial intelligence', 'Chatbot']" />
   </article>
 </template>
 

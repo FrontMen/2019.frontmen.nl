@@ -10,16 +10,16 @@
     </header>
     <div class="flex-row">
       <div class="left half">
-        <Nav/>
+        <Nav />
       </div>
 
       <aside class="right half">
-        <Contact/>
-        <SocialBadges/>
+        <Contact />
+        <SocialBadges />
       </aside>
     </div>
-    <Triangle/>
-    <Copyright/>
+    <Triangle />
+    <Copyright />
   </footer>
 </template>
 
@@ -78,10 +78,5 @@ export default {
 .flex-row {
   display: flex;
   justify-content: space-around;
-}
-
-.flex-column {
-  display: flex;
-  direction: column;
 }
 </style>

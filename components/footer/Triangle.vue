@@ -1,5 +1,5 @@
 <template>
-    <div class="triangle-divider"/>
+  <div class="triangle-divider" />
 </template>
 
 <script>
@@ -32,5 +32,3 @@ export default {
   margin-bottom: -2rem;
 }
 </style>
-
-

@@ -1,7 +1,9 @@
 <template>
   <div class="section-container">
     <section>
-      <h3 class="header">Frontmen on Medium</h3>
+      <h3 class="header">
+        Frontmen on Medium
+      </h3>
       <div class="content">
         <a href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4">
           <img
@@ -10,11 +12,13 @@
           >
         </a>
         <aside>
-          <h4 class="title">Art of debugging with Chrome DevTools</h4>
-          <div class="description">
+          <h4 class="title">
+            Art of debugging with Chrome DevTools
+          </h4>
+          <p class="description">
             Chrome DevTools come with an array of features that help developers debug their apps effectively,
             and therefore find and fix the bugs faster. There are a lot of power tools in devtools which are not quite well-known amongst the developers.
-          </div>
+          </p>
           <div class="button-wrapper">
             <a
               href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4"
@@ -27,7 +31,7 @@
       </div>
     </section>
 
-    <div class="triangle-divider"/>
+    <div class="triangle-divider" />
   </div>
 </template>
 
@@ -46,11 +50,10 @@ export default {
 .header {
   background-color: var(--darkblue);
   padding: 1rem;
-  margin: 0;
   color: white;
   display: inline-block;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
 }
 
 .title {

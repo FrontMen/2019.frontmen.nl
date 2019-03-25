@@ -1,6 +1,8 @@
 <template>
   <div class="contact">
-    <h3 class="heading">Frontmen</h3>
+    <h3 class="heading">
+      Frontmen
+    </h3>
     <div>
       <a href="tel:+31302658108" class="link">+31 (0)30 - 26 58 108</a>
       <br>
@@ -26,5 +28,3 @@ export default {
   color: white;
 }
 </style>
-
-

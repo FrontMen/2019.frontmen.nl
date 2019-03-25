@@ -3,7 +3,8 @@
     <h1>How we helped Toon travel across the border and added an important new feature.</h1>
     <p>For several years now, Toon has been the most used smart thermostat in the Netherlands. High time for Eneco to send Toon across the border. Introducing it abroad did require a new – hybrid – app. We ensured that the Toon thermostat was prepared for home automation functions and built in an important new feature: the Waste Checker.</p>image
     <h2>Our challenge</h2>
-    <p>After successfully rolling out Toon in the Netherlands, Eneco decided to cross the border. The smart thermostat was to be introduced in Belgium and Spain, possibly followed by more countries.
+    <p>
+      After successfully rolling out Toon in the Netherlands, Eneco decided to cross the border. The smart thermostat was to be introduced in Belgium and Spain, possibly followed by more countries.
       <br>The existing Toon platform was not prepared for this step:
     </p>
 
@@ -35,7 +36,7 @@
     <h2>The result</h2>
     <p>The app is used to great satisfaction by 300.000+ households in three countries. Eneco expects the number of users per country, and the number of participating countries to rise significantly in the future.</p>
     <BadgeBar :badges="['react', 'redux', 'jest']" />
-    <InfoSection :tags="['Mobile app', 'Thermostat', 'Smart Home', 'Tele2', 'Scrum']"/>
+    <InfoSection :tags="['Mobile app', 'Thermostat', 'Smart Home', 'Tele2', 'Scrum']" />
   </article>
 </template>
 

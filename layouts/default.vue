@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <TopBar :nav-open="menuOpen" @openNav="toggleMenu"/>
-    <Nav :nav-open="menuOpen" @toggleMenu="toggleMenu"/>
+    <TopBar :nav-open="menuOpen" @openNav="toggleMenu" />
+    <Nav :nav-open="menuOpen" @toggleMenu="toggleMenu" />
     <Main :nav-open="menuOpen" @toggleMenu="toggleMenu">
-      <nuxt class="article"/>
+      <nuxt class="article" />
     </Main>
 
-    <Footer :nav-open="menuOpen"/>
+    <Footer :nav-open="menuOpen" />
   </div>
 </template>
 
@@ -15,19 +15,13 @@ import TopBar from '../components/TopBar'
 import Nav from '../components/Nav'
 import Footer from '../components/footer/Footer'
 import Main from '../components/Main'
-import MediumSection from '../components/MediumSection'
-import BlockQuote from '../components/BlockQuote'
-import InfoSection from '../components/InfoSection'
 
 export default {
   components: {
-    BlockQuote,
     Main,
-    MediumSection,
     Footer,
     Nav,
-    TopBar,
-    InfoSection
+    TopBar
   },
   data() {
     return {
@@ -43,13 +37,12 @@ export default {
 </script>
 
 <style>
-
 .container {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .article {
-  padding-top: 3rem
+  padding-top: 3rem;
 }
 
 .article h1 {
@@ -58,7 +51,7 @@ export default {
 }
 
 .article h2 {
-  letter-spacing: .125rem;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
 }
 
@@ -67,7 +60,7 @@ export default {
 }
 
 .article p:first-of-type {
-    color: var(--lightblue)
+  color: var(--lightblue);
 }
 
 @media (max-width: 960px) {

@@ -18,32 +18,28 @@
           </ul>
         </span>
       </div>
-      <aside class="right-content" v-show="tags">
+      <aside v-show="tags.length > 0" class="right-content">
         <strong class="title">Tags</strong>
         <div>
-          <Tag v-for="(tag, i) in tags" :key="i" :name="tag"/>
+          <Tag v-for="(tag, i) in tags" :key="i" :name="tag" />
         </div>
       </aside>
     </section>
-    <div class="triangle-divider"/>
+    <div class="triangle-divider" />
   </div>
 </template>
 
 <script>
 import Tag from './Tag'
-import BadgeBar from './BadgeBar'
 export default {
   name: 'InfoSection',
   components: {
-    Tag,
-    BadgeBar
+    Tag
   },
   props: {
     tags: {
-      type: Array
-    },
-    badges: {
-      type: Array
+      type: Array,
+      default: () => []
     }
   }
 }

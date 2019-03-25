@@ -27,7 +27,7 @@
       <a href="tel:0302658108">030 - 26 58 108</a>
       <a href="mailto:info@frontmen.nl">info@frontmen.nl</a>
     </div>
-    <MediumSection/>
+    <MediumSection />
   </article>
 </template>
 

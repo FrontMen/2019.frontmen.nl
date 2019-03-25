@@ -2,10 +2,10 @@
   <div class="social-wrapper">
     <div class="social-item">
       <a href="https://www.medium.com/frontmen" target="_blank" rel="noopener">
-        <Badge size="xs" color="#00cccc" type="social" name="medium" :showLabel="false"/>
+        <Badge size="xs" color="#00cccc" type="social" name="medium" :show-label="false" />
       </a>
       <div class="badge-info">
-        <div>We write at</div>
+        <span>We write at</span>
         <a href="https://www.medium.com/frontmen" class="fat-link" target="_blank" rel="noopener">
           <strong>Medium</strong>
         </a>
@@ -13,11 +13,11 @@
     </div>
     <div class="social-item">
       <a href="https://www.meetup.com/FrontMania/" target="_blank" rel="noopener">
-        <Badge size="xs" color="#00cccc" type="social" name="meetup" :showLabel="false"/>
+        <Badge size="xs" color="#00cccc" type="social" name="meetup" :show-label="false" />
       </a>
 
       <div class="badge-info">
-        <div>We meet at</div>
+        <span>We meet at</span>
         <a
           href="https://www.meetup.com/FrontMania/"
           class="fat-link"
@@ -34,10 +34,10 @@
         target="_blank"
         rel="noopener"
       >
-        <Badge size="xs" color="#00cccc" type="social" name="linkedin" :showLabel="false"/>
+        <Badge size="xs" color="#00cccc" type="social" name="linkedin" :show-label="false" />
       </a>
       <div class="badge-info">
-        <div>We work at</div>
+        <span>We work at</span>
         <a
           href="https://www.linkedin.com/company/frontmen-frontend-experts/"
           class="fat-link"
@@ -50,10 +50,10 @@
     </div>
     <div class="social-item">
       <a href="https://twitter.com/frontmenhq" target="_blank" rel="noopener">
-        <Badge size="xs" color="#00cccc" type="social" name="twitter" :showLabel="false"/>
+        <Badge size="xs" color="#00cccc" type="social" name="twitter" :show-label="false" />
       </a>
       <div class="badge-info">
-        <div>We converse at</div>
+        <span>We converse at</span>
         <a href="https://twitter.com/frontmenhq" class="fat-link" target="_blank" rel="noopener">
           <strong>Twitter</strong>
         </a>
@@ -97,5 +97,3 @@ export default {
   margin-bottom: 2rem;
 }
 </style>
-
-
